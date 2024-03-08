@@ -1,45 +1,61 @@
-.backgroundImg {
-    position: absolute;
-    background-color: #FFF;
-    mix-blend-mode: soft-light;
-    opacity: 0.80;
-  }
-
-  .dancing_cat{
-    opacity: 0.80;
-    height: 120px;
-    width: 100px;
-    margin:auto;
-  }
-
   .main_header{
     color: white;
     text-shadow: 1px 1px 2px black;
     opacity: 1;
     margin:auto;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dancing_cat_small{
+    opacity: 0.80;
+    height: 80px;
+    width: 70px;
+    margin:auto;
+  }
+
+  .dancing_cat{
+    opacity: 0.80;
+    height: 250px;
+    width: 220px;
+    margin:auto;
+    order: 2;
+  }
+
+  .under_video{
+    display: flex;
+    justify-content: center;
   }
 
   .video{
-     opacity: 1;
+    margin: auto;
+  }
+
+  .bottom_central_cat{
+    margin: auto;
+    display: flex;
+    justify-content: center;
   }
 
   .central_div{
     display: flex;
-  }
-
-  .under_video{
-    background-color: white;
-    width:320px;
-    height:240px;
+    justify-content: center;
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
   }
 
   .bottom_div{
     display: flex;
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
     margin-top: 10px;
   }
 
-  .bottom_text{
+  .main_text{
+    background-color: pink;
     color: white;
     font-style: normal;
     font-weight: bold;
@@ -50,4 +66,5 @@
   }
 
   body{
+    background-image: url(media/flowers_background.jpg);
   }
